@@ -21,7 +21,8 @@ CREATE TABLE 1gates ( <br>
     time CHAR(25) NOT NULL, <br>
     date CHAR(25) NOT NULL, <br>
     price CHAR(25) NOT NULL)<br>
-<br>
+
+
 3️⃣1users. <br>
 CREATE TABLE 1users ( <br>
     id CHAR(10) NOT NULL Primary key AUTO_INCREMENT, <br>

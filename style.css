@@ -1,0 +1,486 @@
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+	-webkit-appearance: none;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+#fader {
+	width: 100%;
+	height: 1px;
+	background-color: red;
+	-webkit-appearance: none;
+	outline: none;
+	border-radius: 4px;
+	margin: 0, 10%;
+}
+
+#jsColor{
+	-webkit-appearance: none;
+}
+
+#fader::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #ffffff00;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	box-shadow: 0 0 2px #222;
+}
+
+.header{
+	width: 100%;
+
+	display: flex;
+	border-radius: 40px;
+	border-style: solid;
+	border-width: 5px;
+	-webkit-appearance: none;
+	justify-content: space-between;
+	border-color:red;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.header-container{
+	text-decoration: none;
+	display: flex;
+	margin: 35px;
+	color: black;
+}
+
+.header-logo-img{
+	font-size: 82px;
+}
+
+.header-logo-text{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-style: italic;
+	font-size: 64px;
+	font-weight: 300;
+	margin: 0;
+	margin-left: 40px;
+}
+
+.header-logo-link{
+	margin: 30px;
+	vertical-align: middle;
+	flex: 0 1 auto;
+	text-decoration: none;
+	color: black;
+}
+
+.main{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.main-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-container-link{
+    width: 43%;
+    margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+	border-style: solid;
+	flex: 0 1 auto;
+    text-decoration: none;
+    color:black;
+}
+
+
+
+.article-container{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.article-container-item{
+	flex: 0 1 auto;
+}
+
+.article-container-item-main{
+	font-style: italic;
+	font-weight: 700;
+    font-size: 26px;
+	margin: 0px;
+}
+
+.article-container-item-roadtime{
+	font-size: 20px;
+	margin: 0;
+
+}
+
+.right{
+	text-align: right;
+}
+
+.article-container-item-secondary{
+    font-size: 26px;
+	margin: 0;
+}
+
+.article-container-item-time{
+    font-size: 26px;
+	margin: 0;
+}
+
+.article-container-drivername{
+	margin-bottom: 0;
+}
+
+.gate-main{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    border-style: solid;
+    padding: 20px;
+}
+
+.gate-main-block{
+    flex: 0 1 auto;
+}
+
+.gate-main-block-h{
+    margin: 0;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gate-main-container-date{
+    text-align: right;
+}
+
+.gate-main-block-date, .gate-main-block-price{
+    font-size: 32px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.gate-conf{
+    width: 80%;
+    margin: auto;
+}
+
+.gate-conf-container{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+}
+
+.gate-conf-inform{
+    flex:0 1 auto;
+    
+}
+
+.gate-conf-inform-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.gate-conf-inform-item-text{
+    margin: 0px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.gate-conf-inform-item-input{
+    width: 315px;
+    font-size: 24px;
+}
+
+
+.gate-conf-confirm{
+    width: 480px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gate-conf-confirm-button-item{
+    font-size: 24px;
+    background-color: white;
+    width: 210px;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    font-style: italic;
+    transition: 0.6s;
+}
+
+.gate-conf-confirm-button-item:hover{
+    background-color: rgba(255, 99, 71, 0.789);
+}
+
+.login-container{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 40px;
+    width: 620px;
+    margin: auto;
+    height: 730px;
+}
+
+.login-header{
+    display: flex;
+    border-bottom: solid;
+    border-width: 5px;
+    align-items: center;
+}
+
+.login-header-link{
+    display: flex;
+    margin: 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.login-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.login-body-text{
+    font-size: 64px;
+    line-height: 83px;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.login-body-form-item{
+    display: flex;
+    width: 535px;
+    justify-content: space-between;
+    
+}
+
+.login-body-form-item-input{
+    width: 385px;
+    height: 50px;
+    font-size: 36px;
+}
+
+.login-body-form-item-text{
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.login-body-form-button{
+    margin-top: 45px;
+    margin-left: 25%;
+    height: 100px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    border-radius: 24px;
+    border-style: solid;
+    font-weight: 400;
+    border-color: black;
+    left: 50%;
+}
+
+.login-body-reglink{
+    margin-top: 45px;
+    color: black;
+    font-size: 24px;
+}
+
+.registration-container-items-strong-text{
+    font-weight: 500;
+}
+
+.registration-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.registration-container-text{
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 83px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+
+.registration-container-items{
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.registration-container-items-name{
+    flex: 0 1 auto;
+    font-size: 24px;
+    margin: 0;
+}
+
+.registration-container-items-input{
+    flex: 0 1 auto;
+    width: 260px;
+    font-size: 24px;
+}
+
+.registration-container-items-strong-text{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.registration-container-items-button{
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    height: 70px;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 200;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.registration-msg{
+    border-color: rgb(221, 177, 0);
+    border-style: solid;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.driver_article_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.driver_article_h1{
+    font-size: 48px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.driver_container_link{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.driver_container_link_div{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    width: 250px;
+    text-align: center;
+}
+.driver_container_link_div_text{
+    margin: 0;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 300;
+} 
+
+.inform{
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+}
+
+.user_inform_container{
+    width: 200px;
+    margin: auto;
+}
+
+.user_h1{
+    font-style: italic;
+    font-size: 48px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.user_history_text{
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.gate-button{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.error{
+    border-style: solid;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+@media (max-width: 800px){
+    body{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .article-container-item-main, .article-container-item-secondary, .article-container-item-time{
+        font-size: 26px;
+    }
+    .article-container-item-roadtime{
+        font-size: 20px;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container-link{
+        width: 90%;
+    }
+}
